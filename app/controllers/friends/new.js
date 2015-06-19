@@ -1,15 +1,13 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+export default Ember.Controller.extend({
   actions: {
     save: function() {
-      console.log('hi save from friends route');
-
+      console.log('+ hi save in new controller');
       return true;
     },
     cancel: function() {
-      console.log('hi cancel from friends route');
-
+      console.log('+ hi cancel in new controller');
       return true;
     }
   }
