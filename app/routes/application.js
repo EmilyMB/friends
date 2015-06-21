@@ -5,6 +5,7 @@ export default Ember.Route.extend({
     save: function() {
       return true;
     },
+
     cancel: function() {
       return true;
     }
