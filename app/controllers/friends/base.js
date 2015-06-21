@@ -11,8 +11,8 @@ export default Ember.Controller.extend({
   ),
 
   actions: {
-    save: function() {
-      if(this.get('isValid')) {
+    save() {
+      if (this.get('isValid')) {
         this.get('model').save().then((friend) => {
           this.transitionToRoute('friends.show', friend);
         });
@@ -22,7 +22,7 @@ export default Ember.Controller.extend({
 
       return false;
     },
-    cancel: function() {
+    cancel() {
       return true;
     }
   }

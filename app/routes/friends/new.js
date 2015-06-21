@@ -1,15 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function() {
+  model() {
     return this.store.createRecord('friend');
   },
 
   actions: {
-    save: function() {
+    save() {
       return true;
     },
-    cancel: function() {
+
+    cancel() {
       return true;
     }
   }
