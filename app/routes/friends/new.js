@@ -7,13 +7,9 @@ export default Ember.Route.extend({
 
   actions: {
     save: function() {
-      console.log('hi from save in friends/new route');
-
       return true;
     },
     cancel: function() {
-      console.log('hi from cancel in friends/new route');
-
       return true;
     }
   }
