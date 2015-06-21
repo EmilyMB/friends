@@ -1,7 +1,7 @@
-# Borrowers
+# Friends
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a simple front-end app to track loans to friends. It is based off of
+[ember-cli 101](https://leanpub.com/ember-cli-101) by [Adolfo Builes](https://github.com/abuiles) with ES6 ideas from [From Rails to Ember](http://fromrailstoember.com/).
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember server`
+* `ember server --proxy http://api.ember-cli-101.com`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
@@ -41,13 +41,9 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+TBD.
 
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
