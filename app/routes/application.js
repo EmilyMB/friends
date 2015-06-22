@@ -2,10 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   actions: {
-    save: function() {
+    save() {
       return true;
     },
-    cancel: function() {
+
+    cancel() {
       return true;
     }
   }

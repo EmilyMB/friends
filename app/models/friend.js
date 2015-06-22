@@ -1,4 +1,5 @@
 import DS from 'ember-data';
+import Ember from 'ember';
 
 export default DS.Model.extend({
   firstName: DS.attr('string'),
@@ -7,6 +8,6 @@ export default DS.Model.extend({
   twitter: DS.attr('string'),
   totalArticles: DS.attr('number'),
   fullName: Ember.computed('firstName', 'lastName', function() {
-    return this.get('firstName') + ' ' + this.get('lastName');
+    return `${this.get('firstName')} ${this.get('lastName')}`;
   })
 });
