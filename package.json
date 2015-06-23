@@ -35,6 +35,10 @@
     "ember-data": "1.0.0-beta.18",
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.2",
+    "ember-moment": "1.2.1",
     "ember-suave": "0.1.11"
+  },
+  "dependencies": {
+    "ember-cli-fill-murray-bob": "0.0.1"
   }
 }
