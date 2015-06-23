@@ -7,12 +7,20 @@ export default Ember.Route.extend({
     });
   },
 
+  deactivate() {
+    let model = this.modelFor('articles/new');
+
+    if (model.get('isNew')) {
+      model.destroyRecord();
+    }
+  },
+
   actions: {
     save() {
       let model = this.modelFor('articles/new');
       model.save().then(() => {
         this.transitionTo('articles');
-      })
+      });
     },
 
     cancel() {

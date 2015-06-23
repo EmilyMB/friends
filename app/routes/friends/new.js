@@ -5,6 +5,14 @@ export default Ember.Route.extend({
     return this.store.createRecord('friend');
   },
 
+  deactivate() {
+    let model = this.modelFor('friends/new');
+
+    if (model.get('isNew')) {
+      model.destroyRecord();
+    }
+  },
+
   actions: {
     save() {
       return true;
