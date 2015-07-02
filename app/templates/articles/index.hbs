@@ -7,12 +7,12 @@
       <th>Description</th>
       <th>Notes</th>
       <th>Borrowed since</th>
-      <th></th>
+      <th {{action 'setShowReturned'}}>Show/Hide Returned</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
-    {{#each article in model}}
+    {{#each article in filteredResults}}
       {{articles/article-row
         article=article
         save='save'
