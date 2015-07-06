@@ -2,14 +2,14 @@ import Ember from 'ember';
 import { module, test } from 'qunit';
 import startApp from '../../helpers/start-app';
 
-var application;
+let application;
 
 module('Acceptance | friends/new', {
-  beforeEach: function() {
+  beforeEach() {
     application = startApp();
   },
 
-  afterEach: function() {
+  afterEach() {
     Ember.run(application, 'destroy');
   }
 });
@@ -54,9 +54,9 @@ test('Clicking save without filling fields', function(assert) {
       'Stays on new page'
     );
     assert.equal(
-      find("h2:contains(All fields must be filled in)").length,
+      find('h2:contains(All fields must be filled in)').length,
       1,
-      "Displays error message"
+      'Displays error message'
     );
   });
 });
