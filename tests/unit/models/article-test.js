@@ -2,12 +2,11 @@ import { moduleForModel, test } from 'ember-qunit';
 import Ember from 'ember';
 
 moduleForModel('article', 'Unit | Model | article', {
-  // Specify the other units that are required for this test.
   needs: ['model:friend']
 });
 
 test('it exists', function(assert) {
-  var model = this.subject();
+  const model = this.subject();
   assert.ok(!!model);
 });
 

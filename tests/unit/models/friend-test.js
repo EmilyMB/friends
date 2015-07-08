@@ -6,12 +6,12 @@ moduleForModel('friend', 'Unit | Model | friend', {
 });
 
 test('it exists', function(assert) {
-  var model = this.subject();
+  const model = this.subject();
   assert.ok(!!model);
 });
 
 test('fullName joins first and last name', function(assert) {
-  const model = this.subject({firstName: 'Bob', lastName: 'Smith'});
+  const model = this.subject({ firstName: 'Bob', lastName: 'Smith' });
 
   assert.equal(model.get('fullName'), 'Bob Smith');
 
